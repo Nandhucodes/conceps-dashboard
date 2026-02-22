@@ -1,0 +1,105 @@
+.signup {
+  max-width: 380px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.signup__head {
+  margin-bottom: var(--space-6);
+}
+
+.signup__title {
+  font-size: var(--font-size-3xl);
+  font-weight: 800;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.signup__subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.signup__fields {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.signup__pw-strength {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.signup__pw-bars {
+  display: flex;
+  gap: var(--space-1);
+  flex: 1;
+}
+
+.signup__pw-bar {
+  flex: 1;
+  height: 4px;
+  border-radius: var(--border-radius-full);
+  transition: background var(--transition-base);
+}
+
+.signup__pw-label {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  min-width: 45px;
+}
+
+.signup__terms {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.signup__terms input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-accent);
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.signup__terms-error {
+  font-size: var(--font-size-xs);
+  color: var(--color-danger);
+  font-weight: 500;
+  margin-top: -var(--space-2);
+}
+
+.signup__link {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.signup__link:hover {
+  color: var(--color-accent-hover);
+}
+
+.signup__signin {
+  text-align: center;
+  margin-top: var(--space-6);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.signup__signin-link {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.signup__signin-link:hover {
+  color: var(--color-accent-hover);
+}
