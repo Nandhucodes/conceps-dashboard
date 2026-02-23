@@ -1,0 +1,43 @@
+# ── Backend — standalone .gitignore ─────────────────
+# (Root .gitignore also covers these when git is run
+#  from the monorepo root)
+
+# Dependencies
+node_modules/
+
+# Environment secrets
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Build output
+dist/
+build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Uploads (user-generated files)
+uploads/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.sw?
+
+# Temp
+tmp/
+temp/
+*.tmp
