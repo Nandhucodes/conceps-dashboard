@@ -1,0 +1,60 @@
+
+/* ── Dot ── */
+.cc-dot {
+  position: fixed;
+  top: 0; left: 0;
+  width: 8px; height: 8px;
+  background: var(--color-accent, #1b84ff);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  margin-left: -4px;
+  margin-top: -4px;
+  transition: background 0.15s, width 0.15s, height 0.15s, opacity 0.2s;
+  will-change: transform;
+}
+
+.cc-dot--pointer {
+  width: 12px; height: 12px;
+  background: #7239ea;
+  margin-left: -6px; margin-top: -6px;
+}
+
+.cc-dot--clicked {
+  transform: scale(0.7) !important;
+  background: #ec4899;
+}
+
+.cc-dot--hidden { opacity: 0; }
+
+/* ── Ring ── */
+.cc-ring {
+  position: fixed;
+  top: 0; left: 0;
+  width: 36px; height: 36px;
+  border: 2px solid var(--color-accent, #1b84ff);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  margin-left: -18px;
+  margin-top: -18px;
+  opacity: 0.55;
+  transition: width 0.25s, height 0.25s, margin 0.25s, border-color 0.25s, opacity 0.25s;
+  will-change: transform;
+}
+
+.cc-ring--pointer {
+  width: 52px; height: 52px;
+  margin-left: -26px; margin-top: -26px;
+  border-color: #7239ea;
+  opacity: 0.35;
+}
+
+.cc-ring--clicked {
+  width: 28px; height: 28px;
+  margin-left: -14px; margin-top: -14px;
+  opacity: 0.8;
+  border-color: #ec4899;
+}
+
+.cc-ring--hidden { opacity: 0; }
